@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main .main_heading{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .main_heading h1{
+    padding: 10px;
+}
+.main .notices{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .notices .papers{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .notices .papers p{
+    margin: 10px 20px;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+.main .notices .papers .paperlist table tr td{
+    padding: 10px 5px;
+}
+
+.main .notices .syllabus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.main .notices .syllabus p{
+    margin: 10px 20px;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+.main .notices .syllabus .syllabus_link ul li{
+    padding: 10px 5px;
+}
+.main .notices .assignments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .notices .assignments p{
+    margin: 10px 20px;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+.main .notices .assignments ul li{
+    padding: 10px 5px;
+}
+.main .assignments_question{
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    height: 40vh;
+
+}
+.assignments_question .paper_heading {
+    font-size: 1.5em;
+}
+.assignments_question .assignemnt_heading{
+    font-size: 1.2em;
+}
+
+/*respnsive*/
+@media (max-width: 500px) {
+    .notices {
+        display: flex;
+        flex-direction: column;
+    }
+    .assignments_question{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .assignments_question .machine_learning{
+        margin-top: 10px;
+    }
+}
