@@ -1,91 +1,116 @@
-*{
-    padding: 0;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.main .main_heading{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main .main_heading h1{
-    padding: 10px;
-}
-.main .notices{
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.main .notices .papers{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main .notices .papers p{
-    margin: 10px 20px;
-    font-size: 1.6em;
-    text-decoration: underline;
-}
-.main .notices .papers .paperlist table tr td{
-    padding: 10px 5px;
 }
 
-.main .notices .syllabus{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 100%;
-}
-.main .notices .syllabus p{
-    margin: 10px 20px;
-    font-size: 1.6em;
-    text-decoration: underline;
-}
-.main .notices .syllabus .syllabus_link ul li{
-    padding: 10px 5px;
-}
-.main .notices .assignments{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main .notices .assignments p{
-    margin: 10px 20px;
-    font-size: 1.6em;
-    text-decoration: underline;
-}
-.main .notices .assignments ul li{
-    padding: 10px 5px;
-}
-.main .assignments_question{
-    display: flex;
-    align-items: top;
-    justify-content: space-around;
-    height: 40vh;
-
-}
-.assignments_question .paper_heading {
-    font-size: 1.5em;
-}
-.assignments_question .assignemnt_heading{
-    font-size: 1.2em;
+/* Main container */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/*respnsive*/
-@media (max-width: 500px) {
-    .notices {
-        display: flex;
-        flex-direction: column;
-    }
-    .assignments_question{
-        flex-direction: column;
-        margin-left: 10px;
-    }
-    .assignments_question .machine_learning{
-        margin-top: 10px;
-    }
+/* Heading section */
+.heading h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Paper list section */
+.paperlist p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.paperlist table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.paperlist table th, .paperlist table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.paperlist table th {
+    background-color: #333;
+    color: white;
+}
+
+.paperlist table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.paperlist a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.paperlist a:hover {
+    text-decoration: underline;
+}
+
+/* Notices section */
+.notices p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.notices ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notices ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+}
+
+/* Assignments section */
+.assignments {
+    margin-top: 20px;
+}
+
+.assignments .sct_assignment, 
+.assignments .ml_assignment {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.assignments .sub_name{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.assignemnt_heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.assignments ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.assignments ul li {
+    margin-bottom: 8px;
 }
